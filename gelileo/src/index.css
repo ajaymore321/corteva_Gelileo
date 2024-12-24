@@ -1,0 +1,265 @@
+ 
+
+body {
+  background-color: var(--body-color) !important;
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+ 
+  
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Moderustic:wght@300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(28, 88%, 62%);
+  --nav-bg-color: #1a969e;
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  /* --body-color: hsl(0, 5%, 88%); */
+  --body-color: #ececf3;
+  --border-color: #d3d3d3;
+  /* --body-font: "Montserrat", sans-serif; */
+  --body-family: "Moderustic", sans-serif;
+  --second-font: "Dancing Script", cursive;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+  --font-semi-bold: 600;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+ 
+h3.Nunito\,.cursive {
+  font-family: nunito !important;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside {
+  background: #594068;
+  font-size: 18px;
+  font-weight: 400;
+}
+ 
+ 
+.card {
+  border-radius: 4px;
+  margin-bottom: 1rem;
+   /* Default minimum width */
+}
+#card {
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 200px; /* Adjust minimum width for smaller screens */
+  }
+}
+
+.h5-bg {
+  font-weight: 900;
+  padding: 1.2rem;
+  border-radius: 5px;
+}
+ 
+ 
+ 
+ 
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+ 
+ 
+
+.CountText{ 
+  font-family: nunito !important ;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.CountPendingText{ 
+  font-family: nunito !important ;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.CountNumber{
+  font-family: nunito !important ;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.cardWidth{
+  min-width: 360px !important;
+  /* margin-left: 10px; */
+  height: 110px;
+  background: #f3f3f5 !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+.dropdownWidth{
+  width: 100% !important;
+  font-family: nunito !important ;
+  font-size: 15px;
+  font-weight: 500;
+  background: #f3f3f5;
+  border: none !important;
+  border-radius: 10px !important;
+  /* max-height: 38%; */
+}
+ 
+ 
+ .userImage{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+ }
+ .DetailsText p{
+  font-family: nunito !important ;
+  font-size: 16px;
+  font-weight: 600 !important;
+  margin-top: 3px;
+ }
+ .DetailsText p span{
+  font-family: nunito !important ;
+  font-size: 14px;
+  font-weight: 600 !important;
+ }
+ 
+
+ .cardContainer{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important; 
+ }
+ .multiSelect{
+  background: #f3f3f5 !important;
+ }
+ .css-13cymwt-control{
+  margin-top: -6px;
+ }
+ .css-13cymwt-control{
+  margin-top: -6px;
+  border: none !important;
+ }
+ .form-label{
+  font-weight: 600;
+ }
+ .errorMessage{
+  font-family: nunito !important ;
+  font-size: 14px;
+  font-weight: 600 !important;
+  color: red;
+ }
+ 
+
+.Filtersheading{
+  padding: 10px!important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ 
+.grid{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 16px; /* Space between grid items */
+ }
+ 
+
+.row-divider {
+  border-top: 0.2px solid rgba(0, 0, 0, 0.3); /* Adjust opacity with alpha value (0 to 1) */
+  width: 200px; /* Width of the line */
+}
+ 
+ 
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 90%;
+    max-height: 80%;
+  }
+
+  .modal-content {
+    height: auto;
+    width: 100%;
+  }
+
+  .scrollable-container1 {
+    max-height: 300px; /* Adjust based on needs */
+    overflow-y: auto;
+  }
+
+  .form-group {
+    padding: 10px;
+  }
+
+  .label-background {
+    flex-direction: column; /* Adjust label and divider layout */
+    align-items: flex-start;
+  }
+
+  .row-divider {
+    width: 100%; /* Adjust divider for smaller screens */
+  }
+}
+
+label {
+  font-family: nunito !important ;
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
